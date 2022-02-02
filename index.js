@@ -1,13 +1,10 @@
-function Car (manufacturer, model, color, releaseYear, fuelCunsamption, vloume){
-    this.drive = function(){
-        return 'drive';
-    }
-    this.manufacturer = manufacturer;
-    this.model = model;
-    this.color = color;
-    this.releaseYear = releaseYear;
-    this.fuelCunsamption = fuelCunsamption;
-    this.vloume = vloume;
-}
+function createMultiplicationTable(num1, num2) {
+  let table = {};
 
-const car1 = new Car('Tesla', 'model S', 'white', 2012, 0, 250)
+  for (let i = 1; i < num1; i++) {
+    for (let y = 1; y <= num2; y++) {
+      table[`${i} * ${y}  =`] = i * y;
+    }
+  }
+  return table;
+}
