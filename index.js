@@ -1,10 +1,9 @@
-function createMultiplicationTable(num1, num2) {
-  let table = {};
+let arr = [];
+arr.push('cat', 'dog', 'hare');
 
-  for (let i = 1; i < num1; i++) {
-    for (let y = 1; y <= num2; y++) {
-      table[`${i} * ${y}  =`] = i * y;
-    }
-  }
-  return table;
-}
+let deletePats = arr.pop();
+arr.unshift('Zeus', 'ogr', 'curier', 'baby roshan');
+
+const splice1 = arr.splice(2, 2, 'roshan');
+
+const slice1 = arr.slice(0, 4).reverse()
