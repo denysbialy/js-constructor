@@ -1,9 +1,15 @@
-let arr = [];
-arr.push('cat', 'dog', 'hare');
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-let deletePats = arr.pop();
-arr.unshift('Zeus', 'ogr', 'curier', 'baby roshan');
+numbers.forEach(callback)
 
-const splice1 = arr.splice(2, 2, 'roshan');
+// function callback(num){
+//     console.log(num ** 3)
+// }
+function callback(num, index){
+    if(index % 2 === 0){
+        console.log(num ** 2 + ' в квадрате')
+    } else {
+        console.log(num ** 3 + ' в кубе')
+    }
+}
 
-const slice1 = arr.slice(0, 4).reverse()
